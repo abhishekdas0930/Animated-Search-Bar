@@ -1,0 +1,156 @@
+/* CSS reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:url(background.jpg) no-repeat center center/cover;
+}
+
+nav{
+    position: fixed;
+    width: 50px;
+    top: 40%;
+    left: 0%;
+    z-index: 99;
+    border: 1px solid #333;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, .6);
+}
+
+nav li{
+    height: 50px;
+    position: relative;
+    color: white;
+    display:block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    padding-left: 0%;
+}
+
+nav li a{
+    color: white;
+    display:block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid #333;
+    padding-left: 20px;
+}
+
+nav li:nth-child(1) a{
+    background: #3b5998;
+}
+
+nav li:nth-child(2) a{
+    background: #c13584;
+}
+
+nav li:nth-child(3) a{
+    background: #00aced;
+}
+
+nav li:nth-child(4) a{
+    background: #bb0000;
+}
+
+nav li a i{
+   position: absolute;
+   left:18px;
+   top:17px;
+   font-size: 22px;
+   text-decoration: none;
+}
+
+nav li a span{
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-left: 30px;
+    visibility: hidden;
+}
+
+a:hover{
+    width: 160px;
+    border: 1px solid #333;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+}
+
+ul li a:hover span{
+     visibility: visible;
+}
+
+.title h1{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    bottom: 50%;
+    left: 0%;
+    right: 40%;
+    color:aliceblue;
+    font-family: 'Rubik', sans-serif;
+    transition: all ease-in;
+ }
+
+.main{
+    position: absolute;
+}
+
+input{
+    height: 60px;
+    width: 0px;
+    outline: none;
+    padding: 0 20px;
+    color: #333;
+    font-size: 20px;
+    border: 1px solid #e84545;
+    border-radius: 50px;
+    transition: all .4s ease-in;
+}
+
+::placeholder{
+    color: #536162;
+}
+
+.btn{
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    background-color: #e84545;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    line-height: 80px;
+}
+
+.btn i{
+    font-size: 25px;
+    color: #fff;
+    transition: all.5s ease-in;
+}
+
+.main:hover input{
+    width: 400px;
+}
+
+.main:hover i{
+    transform: rotate(-90deg);
+}
+
+
+.title:hover h1{
+    font-size: 50px;
+    color:whitesmoke;
+}
